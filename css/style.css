@@ -1,0 +1,249 @@
+/*
+ * Base
+ */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+  	background-color: #ffffba; 
+  	color: #000000;
+  	font-family: "ff-din-web", Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+/*
+ * Typography
+ */
+ h1, h2, h3, h4 {
+	margin: 0;
+	font-weight: 700;
+	line-height: 1;
+}
+
+h1 {
+	margin-bottom: 1rem;
+	font-family: "din-condensed-web", Helvetica, Arial, sans-serif;
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+h2 {
+	margin-bottom: 1rem;
+	font-size: 1.333em;
+	line-height: 1.3;
+	text-transform: uppercase;
+	color: #ed331a;
+}
+
+h2 > a {
+	color: #ed331a;
+}
+
+h3 {
+	margin-bottom: 1.3rem;
+	font-size: 1.25em;
+	line-height: 1.2;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+.small {
+	font-size: 0.75em;
+}
+
+p {
+	margin: 0 0 1.3rem 0;
+	line-height: 1.3;
+}
+
+p > a {
+	border-bottom: 1px solid #000000;
+}
+
+.strong {
+	font-weight: 700;
+}
+
+.red {
+	color: #ed331a;
+}
+
+.center {
+	text-align: center;
+}
+
+.link--red {
+	color: #ed331a;
+	border-bottom: 1px solid #ed331a;
+}
+
+/*
+ * Button and inputs
+ */
+.btn, input {
+	display: block;
+	margin: 0 auto;
+	padding: 1rem;
+	width: 100%;
+	max-width: 300px;
+	border: none;
+	font-size: 1em;
+	font-family: "ff-din-web", Helvetica, Arial, sans-serif;
+}
+
+input {
+	margin-bottom: 1.3rem;
+	padding-top: 1.1rem;
+	border: 2px solid #ffffff;
+}
+
+input:focus {
+	outline: 0;
+	border: 2px solid #ed331a;
+}
+
+.btn {
+	color: #ffffff;
+	background-color: #ed331a;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+/*
+ * Grid
+ */
+.wrap {
+	margin: 0 auto;
+	max-width: calc(100% - 2rem);
+}
+
+ section {
+ 	margin-bottom: 4rem;
+ }
+
+/*
+ * Header
+ */
+header {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	margin: 30px 0 0 0; 
+	padding: 1rem;
+	font-family: "din-condensed-web", Helvetica, Arial, sans-serif;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+}
+
+/*
+ * Hero
+ */
+.hero {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	max-width: 1440px;
+	overflow: visible;
+	margin: 0 auto;
+	background-image: url(../img/lettering.png);
+	background-size: cover;
+	background-position: 50%;
+}
+
+.hero > h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+/*
+ * Specific elements
+ */
+.banner {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+	height: 30px;
+	color: #ffffff;
+	background-color: #ed331a;
+	font-weight: 700px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 32px;
+}
+
+/*
+ * Media queries
+ */
+@media screen and (min-width: 481px) {
+	body {
+		font-size: 1.1em;
+	}
+	.wrap {
+		max-width: calc(100% - 4rem);
+	}
+	header {
+		margin-top: 40px;
+	}
+	p {
+		line-height: 1.4;
+	}
+	.btn, input {
+		max-width: 400px;
+	}
+	.banner {
+		height: 40px;
+		line-height: 32px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 1.2em;
+	}
+	.wrap {
+		max-width: 703px;
+	}
+	header {
+		margin-top: 50px;
+		font-size: 1.5rem;
+	}
+	h1 {
+		font-size: 4em;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+	.btn, input {
+		max-width: 500px;
+	}
+	.banner {
+		height: 50px;
+		line-height: 52px;
+	}
+	.hero {
+		margin: 3rem auto;
+		height: 400px;
+	}
+}
