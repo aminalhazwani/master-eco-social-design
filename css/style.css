@@ -24,7 +24,7 @@ a {
 /*
  * Typography
  */
- h1, h2, h3, h4 {
+h1, h2, h3, h4 {
 	margin: 0;
 	font-weight: 700;
 	line-height: 1;
@@ -147,6 +147,10 @@ header {
 	text-transform: uppercase;
 }
 
+.header-nav__link {
+	margin-left: 5px;
+}
+
 /*
  * Hero
  */
@@ -173,10 +177,6 @@ header {
 	text-align: center;
 }
 
-.hero > h1 {
-	
-}
-
 /*
  * Specific elements
  */
@@ -196,6 +196,12 @@ header {
 .banner > a {
 	color: #ffffff;
 	border-bottom: 2px solid #ffffff;
+}
+
+.social-icon {
+	width: 18px;
+	height: 18px;
+	margin-right: 4px 
 }
 
 /*
